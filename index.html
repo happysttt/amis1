@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.main img{
+			width: 25vw;
+			margin-top: 2vh;
+			margin-left: 6.25vw;
+		}
+	</style>
+</head>
+<body>
+	<nav class="red darken-4">
+    	<div class="nav-wrapper">
+      		<a href="#" class="brand-logo center">AMIS</a>
+    	</div>
+  	</nav>
+	<div class="main">
+		<img class="img1" src="1.jpg">
+    	<img class="img2" src="4.jpg">
+    	<img class="img3" src="5.jpg">
+	</div>
+	
+	<div class="daha info" style="display: none;">
+		<center>
+			<h3 style="width: 70vw;">Дьа5а – самый звонкий шумовой инструмент. Ее изготавливают из осины, вокруг вставляют маленькие бубенчики внутри которых вкладывают разные бусинки, для создания шумового эффекта.</h3>
+		<img src="1.jpg" style="height: 90vh;">
+		
+		</center>
+	</div>
+	
+	<div class="kupsur info" style="display: none;">
+		<center>
+			<h3 style="width: 70vw;">Купсуур (Кюпсюр) – ударный музыкальный инструмент, подобный барабану. Изготавливают из хорошей лиственницы, выковыривают внутренний слой. Верхнюю ударную часть закрывают специально выделанной коровьей шкурой.</h3>
+		<img src="4.jpg" style="height: 90vh;">
+		
+		</center>
+	</div>
+
+	<div class="khomus info" style="display: none;">
+		<center>
+			<h3 style="width: 70vw;">Якутский хомус (варган) – древний музыкальный инструмент народов Республики Саха (Якутия), возраст которого составляет более 5 тысяч лет. Его отличает характерный «космический» звук: он издревле считался инструментом якутских шаманов</h3>
+		<img src="5.jpg" style="height: 90vh;">
+		
+		</center>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		var img1=document.querySelector(".img1");
+		var img2=document.querySelector(".img2");
+		var img3=document.querySelector(".img3");
+		var daha=document.querySelector(".daha");
+		var main=document.querySelector(".main");
+		var kupsur=document.querySelector(".kupsur")
+		var khomus=document.querySelector(".khomus")
+		img1.onclick=function(){
+			main.style.display="none";
+			daha.style.display="block";
+			main.style.transition="1s";
+		}
+		img2.onclick=function(){
+			main.style.display="none";
+			kupsur.style.display="block";
+			kupsur.style.transition="1s";
+		}
+		img3.onclick=function(){
+			main.style.display="none";
+			khomus.style.display="block";
+			khomus.style.transition="1s";
+		}
+		khomus.onclick=function(){
+			main.style.display="block";
+			khomus.style.display="none";
+			main.style.transition="1s";
+		}
+		kupsur.onclick=function(){
+			main.style.display="block";
+			kupsur.style.display="none";
+			main.style.transition="1s";
+		}
+		daha.onclick=function(){
+			main.style.display="block";
+			daha.style.display="none";
+			main.style.transition="1s";
+		}
+
+	</script>
+</body>
+</html>
